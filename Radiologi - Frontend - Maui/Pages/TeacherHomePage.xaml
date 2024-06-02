@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Radiologi___Frontend___Maui.Pages.TeacherHomePage"
+             xmlns:viewmodel="clr-namespace:Radiologi___Frontend___Maui.ViewModel"
+             x:DataType="viewmodel:TeacherHomeViewModel"
+             Title="TeacherHomepage">
+
+    <VerticalStackLayout>
+        <Label 
+            Text="{Binding Id}"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <Button Text="Dine klasser"
+                Command="{Binding ViewClassesCommand}"></Button>
+        
+        <Button Text="Opret test"
+                Command="{Binding CreateTestCommand}"></Button>
+
+        <Button Text="Klasse stilling"
+                Command="{Binding ViewRankingsCommand}"></Button>
+
+        <Button Text="Go back"
+                Command="{Binding LogoutCommand}"></Button>
+    </VerticalStackLayout>
+</ContentPage>

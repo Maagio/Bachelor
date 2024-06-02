@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Radiologi___Frontend___Maui.Pages.ClassesPage"
+             Title="ClassesPage"
+             xmlns:ViewModel="clr-namespace:Radiologi___Frontend___Maui.ViewModel"
+             x:DataType="ViewModel:ClassesViewModel">
+
+    <Grid RowDefinitions="100, Auto, Auto, Auto, Auto"
+          ColumnDefinitions=".75*, .25*"
+          Padding="10"
+          RowSpacing="10"
+          ColumnSpacing="10">
+
+        <!--<Button Text="Create new"
+                Command="{Binding CreateClassCommand}"
+                Grid.Row="3"></Button>-->
+    </Grid>
+</ContentPage>
