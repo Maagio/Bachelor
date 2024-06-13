@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Radiologi___Frontend___Maui"
+             xmlns:sys="clr-namespace:System;assembly=mscorlib"
+             x:Class="Radiologi___Frontend___Maui.Pages.StudentHomePage"
+             xmlns:viewmodel="clr-namespace:Radiologi___Frontend___Maui.ViewModel"
+             x:DataType="viewmodel:StudentHomeViewModel"
+             Title="StudentHomePage">
+
+    <VerticalStackLayout>
+        <Label
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"
+            Padding="10">
+            <Label.Text>
+                <MultiBinding StringFormat="Velkommen {0}">
+                    <Binding Path="Name" />
+                </MultiBinding>
+            </Label.Text>
+        </Label>
+
+        <Button Text="Dine prøver"
+                Command="{Binding ViewTestsCommand}"></Button>
+
+        <Button Text="Klasse stilling"
+                Command="{Binding ViewRankingsCommand}"></Button>
+
+        <Button Text="Go back"
+                Command="{Binding LogoutCommand}"></Button>
+    </VerticalStackLayout>
+</ContentPage>

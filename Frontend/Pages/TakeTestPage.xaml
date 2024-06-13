@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Radiologi___Frontend___Maui.Pages.TakeTestPage"
+             xmlns:viewmodel="clr-namespace:Radiologi___Frontend___Maui.ViewModel"
+             x:DataType="viewmodel:TakeTestViewModel"
+             Title="TakeTestPage">
+    <VerticalStackLayout>
+        <StackLayout x:Name="TestStackLayout">
+            
+        </StackLayout>
+        <Button Text="Submit"
+                Command="{Binding SubmitCommand}">
+        </Button>
+    </VerticalStackLayout>
+</ContentPage>
