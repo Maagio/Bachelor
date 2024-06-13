@@ -1,1 +1,2 @@
-The API Backend is on the master branch, while the frontend is on the branch called frontend, as i'm struggling to properly upload them both
+Manuelt uploaded frontend delen til frontend folder, men vil ikke kunne køre da det så mangler de auto genereret filer.
+Fuldt frontend upload ligger under branchen "Frontend".
